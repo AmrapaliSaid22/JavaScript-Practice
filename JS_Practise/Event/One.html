@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html , body{
+        height: 100vh;
+        width: 100vw;
+      }
+      img{
+        width: 250px;
+      }
+    </style>
+</head>
+<body style="background-color: #8a8888; color: aliceblue;">
+
+    <H2>Amezing Images</H2>
+    <ul id="images">
+        <li><img src="/Event/image/about.jpg" alt="" id="Cofee"></li>
+        <li><img src="/Event/image/background.png" alt="" id="bg"></li>
+        <li><img src="/Event/image/menu1.png" alt="" id="menu1"></li>
+        <li><img src="/Event/image/menu3.jpg" alt="" id="menu3"></li>
+        <li><a href="https://google.com" style="color: aliceblue;" id="google">Google</a></li>
+    </ul>
+    
+</body>
+<script>
+    //type , timestamp, defaultPrivented
+    //Target, toElement , srcElement, currentTarget,
+    //clientX, clientY, screenX, screenY
+    //altkey, ctrlkey, shiftkey, keyCode
+    // document.getElementById('images').addEventListener('click', function (event) {
+    //         // alert("Image clicked")
+    //         console.log("Clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('bg').addEventListener('click', function (event) {
+    //         console.log("Clicked 2nd image");
+    //         event.stopPropagation();
+    // }, false)
+
+    // document.getElementById('google').addEventListener('click', function (event) {
+    //         console.log("Google Clicked");
+    //         event.preventDefault();
+    //         event.stopPropagation();
+    // }, false)
+
+    document.querySelector('#images').addEventListener('click', function (event) {
+        console.log(event.target.tagName);
+         if(event.target.tagName === 'IMG') {
+             let removeIt = event.target.parentNode
+             removeIt.remove();
+         }
+        
+        // removeIt.parentNode.removeChild(removeIt)
+    }, false)
+
+
+
+
+</script>
+</html>

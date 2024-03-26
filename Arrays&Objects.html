@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays And Objects</title>
+</head>
+<body>
+    <div class="container">simple si html</div>
+
+    <script>
+        let myvar = 34;
+        let myvar2 = "string";
+        let myvar3 = true;
+        let myvar4 = null;
+        let myvar5 = undefined;
+
+        let employee = {
+            name: "John",
+            salary: 100000,
+            employee_Id: 101, 
+        }
+        console.log(employee);
+
+        let names = ["John", 10 , 1 , 2, undefined, "John"];
+        console.log(names);
+
+        let names2 = new Array(1,2,3,"john",undefined, "John");
+        console.log(names2);
+
+
+        let names1 = new Array(1,2,3,"john",undefined);
+        console.log(names1[3]);
+
+        //Length of Array
+
+        console.log(names1.length);
+        names1 = names1.sort();
+
+        console.log(names);
+
+        names1.push("Ths is Pushed");
+        console.log(names1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is about Loops..<h1>
+    </div>
+
+    <script>
+      console.log("This is about Loops");
+      
+      //loops
+
+      //------Method 1-----
+      // let i = 0;
+      //for(i=0;i<3;i++){
+       // console.log(i);
+     // } 
+
+     let friends = ["Riya", "Siya","John","Priya","Sakshi"]
+
+     //-----Method 2 ------
+       // for (let index = 0; index < friends.length; index++){
+         //   console.log("Hello Friends ," + friends[index]);
+        //}
+
+     // ------- Method 3 --------
+      //  friends.forEach(function f(element){
+        //    console.log("Hello..." + element)
+  //      });
+
+    //--------Method 4---------
+
+  //  for (element of friends){
+  //      console.log("Hello .." + element + " To modern Javascript ..")
+   // }
+
+   //--------Method 5---------
+
+   let employee = {
+    name: "John",
+    salary : 100,
+    id : "123",
+   }
+// use this loop to iterate over object in JS 
+
+for(key in employee){
+    console.log(`The ${key} of employee is ${ employee[key]}`);
+}
+
+
+//-----While loop in JS-----
+
+let i=0;
+while(i<4)
+{
+    console.log(`${i} is less than 4`);
+    i++;
+}
+
+//-----Do While loop in JS-----
+let j = 21;
+ do{
+    console.log(`${j} is less than 4 and we are inside Do-While loop`);
+    j++;
+}while(j<4);
+
+  </script>
+</body>
+</html>
